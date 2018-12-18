@@ -72,7 +72,8 @@ public class RainCacheApplicationTests {
 
         Assert.assertTrue(wrapper2.getCreateTime() == cacheWrapper2.getCreateTime());
         Assert.assertTrue(wrapper2.getExpireTime() == cacheWrapper2.getExpireTime());
-        Assert.assertTrue(((Employee) wrapper2.getObj()).getId() == ((Employee) cacheWrapper2.getObj()).getId());
+        Assert.assertTrue(((Employee) wrapper2.getObj()).getId() == ((
+                Employee) cacheWrapper2.getObj()).getId());
 
         //测试expire
         Thread.sleep(expTime * 1000 + 100);
